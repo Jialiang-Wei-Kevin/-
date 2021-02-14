@@ -1,0 +1,32 @@
+<script type="text/javascript">
+    //设置玩家输入框
+    var playerchoose =prompt('剪刀，石头，布');
+    //设置电脑的出招范围
+    var computer= Math.round(Math.random() * 3) ;
+   
+    //逻辑判断
+    var result;
+    if(playerchoose=="剪刀"&&computer=="2" ||
+        playerchoose=="石头"&&computer=="0"||
+        playerchoose=="布"&&computer=="1"
+    ){
+        result="你赢了";
+    }else if(playerchoose=="剪刀"&&computer=="1" ||
+        playerchoose=="石头"&&computer=="2"||
+        playerchoose=="布"&&computer=="0"
+    ){
+        result="你输了";
+    }else{
+        result="平手";
+    }
+    //输出结果
+    alert(result);
+
+
+    
+
+
+
+
+
+    </script>
